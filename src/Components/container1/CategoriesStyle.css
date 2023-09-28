@@ -1,0 +1,104 @@
+.categories{
+    width: 300px;
+    height: 600px;
+    background:var(--bgColor);
+    /* border: 1px solid red; */
+
+
+}
+.category{
+    width: 100%;
+    height: 600px;
+    box-shadow: 0 0 3px 0 grey;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+}
+
+.categoriesContainer{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+} 
+.categoriesBox {
+    width: 100px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+.categoriesBox:hover{
+    transform: translate(-10px,-10px);
+}
+.categoriesHeading{
+    font-size: 2rem;
+    /* border-bottom: 1px solid gray; */
+    margin:0 10px;
+    background:var(--bgColor);
+    position: relative;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+.CategoryImages{
+    height:100px;
+    width: 100px;
+    
+}
+/* resonsive tablet and phone */
+@media (max-width:970px){
+    .categories{
+        margin-top: 40px;
+        width: 100vw;
+        height: 200px; 
+
+    }
+    .category{
+        height:100% ;
+        width: 100vw;
+    }
+    .categoriesContainer{
+        width: 100vw;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+       justify-content: space-between;
+        align-items: center;
+      
+    }
+     /* .category{
+        margin-top: 40px;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        overflow-x: scroll; 
+        flex-wrap: nowrap;
+       
+
+    }  */
+ 
+    .categoriesHeading{
+        height: 30px;
+        font-size: 26px;
+     border-bottom: 1px solid rgba(237, 231, 225,1);
+    }
+
+    .categoriesBox{
+        width: 150px;
+        min-width: 150px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+        margin-right: 20px;
+        /* margin-top:50px ; */
+        }
+}

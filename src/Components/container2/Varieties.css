@@ -1,0 +1,143 @@
+.varietie{
+    margin: 50px 0;
+    /* height: 350px; */
+    height: 650px;
+    width: 100vw;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.varietieHeading{
+    font-size: 40px;
+    height: 50px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.varieties{
+    /* height: 350px; */
+    height: 600px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.varietiesContainer{
+    /* height: 350px; */
+    height: 600px;
+    width: 33.33%;
+    position: relative;
+    overflow: hidden;
+}
+.varietiesContainer:hover>img{
+    cursor: pointer;
+    transform: scale(130%);
+}
+.varietiesImages{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 10s;
+    
+}
+.varietiesBtn{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    left: 30%;
+    bottom: 30%;
+    transform: translate(-50%, 50%);
+    z-index: 3;
+    overflow: hidden;
+    border: 1px solid white;
+}
+.varietiesBtn:hover{
+    cursor: pointer;
+}
+.varietiesBtn:hover>div {
+    
+    transform: translateX(110%);
+}
+.varietiesBtn:hover>.varietiesBrnText {
+    
+  color:white;
+}
+.varietiesBg{
+    display:flex;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: transform 0.5s;
+}
+.varietiesBrnText{
+font-size: 16px;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+z-index: 5;
+text-align: center;
+}
+@media (max-width:1200px){
+    .varietie{
+        margin: 50px 0;
+        /* height: 350px; */
+        height: 1250px;
+        width: 100vw;
+    }
+    .varieties{
+        /* height: 350px; */
+        height: 1200px;
+        width: 100vw; 
+        flex-wrap: wrap; 
+    }
+    .varietiesContainer{
+        height: 600px;
+        width: 50%;
+    }
+    .varietiesContainer3{
+        width: 100%;
+        
+    }
+    .varietiesImages{
+        width: 100%;
+        height: 100%;
+        object-position: top;
+        transition: transform 10s;
+        
+    }
+}
+@media (max-width:650px){
+    .varietie{
+        margin: 50px 0;
+        /* height: 350px; */
+        height: 1600px;
+        width: 100vw;
+    }
+    .varietieHeading{
+        font-size: 26px;
+        height: 40px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .varieties{
+        /* height: 350px; */
+        height: 1500px;
+        width: 90vw; 
+        flex-wrap: wrap; 
+    }
+    .varietiesContainer{
+        height: 500px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .varietiesBtn{
+        position: relative;
+        left: 50%;
+        bottom: 30%;
+        transform: translate(-50%, 50%);
+       
+    }
+
+}
